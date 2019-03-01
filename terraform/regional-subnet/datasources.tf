@@ -1,7 +1,7 @@
 # List of Availability Domains on Phoenix Region.
 variable "ad_list_phx" {
-  type = "list"
-  default = ["AKFI:PHX-AD-1","AKFI:PHX-AD-2","AKFI:PHX-AD-3"]
+  type    = "list"
+  default = ["AKFI:PHX-AD-1", "AKFI:PHX-AD-2", "AKFI:PHX-AD-3"]
 }
 
 # Get the latest Oracle Linux image
