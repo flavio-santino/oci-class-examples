@@ -1,13 +1,30 @@
 # Data from terraform.tfvars file
-variable "tenancy_ocid" {}
+variable "tenancy_ocid" {
+}
 
-variable "compartment_ocid" {}
-variable "user_ocid" {}
-variable "fingerprint" {}
-variable "private_key_path" {}
-variable "region" {}
-variable "ssh_public_key" {}
-variable "ssh_private_key" {}
+variable "compartment_ocid" {
+}
+
+variable "user_ocid" {
+}
+
+variable "fingerprint" {
+}
+
+variable "private_key_path" {
+}
+
+variable "private_key_password" {
+}
+
+variable "region" {
+}
+
+variable "ssh_public_key" {
+}
+
+variable "ssh_private_key" {
+}
 
 # VCN variables
 variable "vcn_cidr" {
@@ -36,16 +53,17 @@ variable "linux_os_version" {
 }
 
 ### Compute Shape and Number of Instances
-variable instance_count {
+variable "instance_count" {
   description = "Number of instances"
-  default     = "4"
+  default     = "2"
 }
 
-variable instance_shape {
+variable "instance_shape" {
   description = "Instance Shape"
-  default     = "VM.Standard2.1"
+  default     = "BM.HPC2.36"
 }
 
 output "InstancePublicIP" {
-  value = ["${oci_core_instance.instances.*.public_ip}"]
+  value = [oci_core_instance.instances.*.public_ip]
 }
+

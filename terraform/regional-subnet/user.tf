@@ -4,5 +4,6 @@ resource "oci_identity_user" "user01" {
 }
 
 resource "oci_identity_ui_password" "user01_password" {
-  user_id = "${oci_identity_user.user01.id}"
+  user_id = oci_identity_user.user01.id
 }
+
