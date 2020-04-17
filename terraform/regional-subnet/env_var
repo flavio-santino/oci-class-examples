@@ -1,9 +1,0 @@
-## Terraform Authentication Details ##
-export TF_VAR_tenancy_ocid="ocid1.tenancy.oc1..aaaaaaaa3epk7xxnme4cs6r7umreuulyou5poomg2kpd5xd7xykvdcypbzqa"
-export TF_VAR_user_ocid="ocid1.user.oc1..aaaaaaaadujdjgsovnkerdamiwgkhqubcvm5dqms3qe77et3jj2uoiufm6nq"
-export TF_VAR_compartment_ocid="ocid1.compartment.oc1..aaaaaaaafc3xqsvobxzegt3brj4axpfdyduedvpjtffnskrz7kakfxn2qouq"
-export TF_VAR_fingerprint="42:93:0d:b2:b5:05:0e:43:bc:99:d1:9f:6c:59:83:e1"
-export TF_VAR_private_key_path="/home/opc/.oci/oci_api_key.pem"
-export TF_VAR_ssh_public_key=$(cat /home/opc/.ssh/id_rsa.pub)
-export TF_VAR_ssh_private_key=$(cat /home/opc/.ssh/id_rsa)
-export TF_VAR_region="us-phoenix-1"
